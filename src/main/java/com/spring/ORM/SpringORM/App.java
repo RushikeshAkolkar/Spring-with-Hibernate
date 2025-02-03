@@ -16,8 +16,8 @@ public class App
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("com/spring/ORM/SpringORM/config.xml");
         StudentDao studentdao =  (StudentDao) context.getBean("studentDao");
-        Student student = new Student(123,"Rushikesh Akolkar","Ahilya-Nagar");
+        Student student = new Student(11,"Rushikesh Akolkar","Ahilya-Nagar");
         int r = studentdao.insert(student);
-        System.out.println("done "+r);
+        System.out.println("done id "+r);
     }
 }
